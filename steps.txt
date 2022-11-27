@@ -1,0 +1,43 @@
+step 1) git status
+step 2) git init (to create a git repository)
+
+Setting up user.name and user.email globally
+git config --global user.name "<userName>"
+git config --global user.email "<userEmail>" 
+
+Generating new ssh key
+
+1) ssh-keygen -t <someName>-C "<your email id>" //Generating SSH key 	
+2) eval "$(ssh-agent -s)" //Starting ssh agent
+3) ssh-add ~/.ssh/id_<someName> //Adding your ssh key to agent   
+4) tail ~/.ssh/id_<someName>.pub //Display your ssh key 
+commands
+
+* git status (to check the git status of the directory)
+* git init (to create a new git repository)
+* git add --a (to add all files in git's staging area)
+* git add <file name> (to add a particular file in git's stagging area)
+* git commit -m <write your message for the commit> (to commit the files in staging area)
+* git log (to check all the commits)
+* rm -rf .git (this will remove the repository folder .git *** don't do this *** )
+* git clone <link> (to copy any repository from github)
+* press q to end 
+* touch <filename> (to create a file)
+* (use .gitignore file to store the name of the file you don't need to track.)
+* git diff (compare files in modified area and stagging area)
+* git diff (compare files in git stagged area and git commit area)
+* git log -p (display all commits in paragraph)
+* git log -p -2 (display 2 commits in paragraph)
+* git log --stat (display summary of commits)
+* git log --pretty=oneline (display commits in one line)
+* git log --pretty=short (display commit in short)
+* git log --pretty=full (display commit with some details)
+* git log --since=2.days (display commit that is commited 2 days back)
+* git commit --amend (to edit previous commit)
+* git restore --staged <file name> (unstage the file from staging area)
+* git checkout -- <file name> (restore the particular file of previous commit)
+* git checkout -f (resotre all files of previous commit)
+* git remote add <alias name> <link> (connet a remote link to the git)
+* git remote (show the remotes)
+* git remote -v ( show url for push and fetch )
+* git push -u 
